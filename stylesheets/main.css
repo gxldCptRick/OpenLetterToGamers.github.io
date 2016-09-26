@@ -52,8 +52,6 @@ p {
 
     display: inline;
 
-    margin-top: 12px;
-
 }
 [class*='col-']:last-of-type {
 
