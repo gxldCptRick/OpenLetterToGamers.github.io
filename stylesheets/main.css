@@ -2,8 +2,10 @@
 
     font-family: "yatra one";
 
-    src: url(../outsideFonts/yatra-one-master/Yatra-Regular.ttf)
+    src: url(../outsideFonts/yatra-one-master/Yatra-Regular.ttf);
+
 }
+
 body {
 
     background: #111 url(../images/paperTexture.jpg);
@@ -13,6 +15,7 @@ body {
     font-size: 1em;
 
 }
+
 h1 {
 
     text-align: center;
@@ -20,6 +23,7 @@ h1 {
     font-size: 2.8125em;
 
 }
+
 p {
 
     text-indent: 3.25em;
@@ -27,14 +31,16 @@ p {
     font-size: 1.5625em;
 
 }
-.sign-off{
-    text-indent: 4.25em;
-}
+
+
+
+
 .grid {
 
     width: 100%;
 
 }
+
 .grid:after {
 
     content: "";
@@ -44,6 +50,7 @@ p {
     clear: both;
 
 }
+
 [class*='col-']{
 
     float: left;
@@ -53,11 +60,13 @@ p {
     display: inline;
 
 }
+
 [class*='col-']:last-of-type {
 
     padding-right: 0;
 
 }
+
 *, *:after, *:before {
 
   -webkit-box-sizing: border-box;
@@ -67,52 +76,74 @@ p {
     box-sizing: border-box;
 
 }
+
 .grid-pad {
 
     padding: 20px 0 20px 20px;
 
 }
+
 .grid-pad > [class*='col-']:last-of-type {
 
     padding-right: 20px;
 
 }
+
 .col-1-3 {
 
     width: 33.3333333333333%;
 
 }
+
 .col-1-2 {
 
     width: 50%;
 
 }
+
 .col-2-3 {
 
     width: 66.6666666666667%;
 }
+
 .col-1-4{
 
     width: 25%;
 
 }
+
 .col-3-4{
 
     width: 45%;
 
 }
+
 [class*='col-block']{
+
     background-color: #111;
+
     display: block;
+
     height: 1px;
+
     opacity: 0;
+
 }
+
 .col-block-1-4 {
+
     width: 25%;
+
 }
+
 .col-block-1-3 {
-    width: 33.3333333333333%;
+
+    width: 33.3333333333333333%;
+
 }
+
 .col-block-1-6 {
+
     width: 16.6666666666666667%;
+
 }
