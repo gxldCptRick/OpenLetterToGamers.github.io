@@ -20,10 +20,16 @@ body {
 
 p {
     font-size: 1em;
-    border-radius: 5px;
+    border-radius: 22px;
     background: #000;
     color: #fff;
 }
+
+h1 {
+    text-align: center;
+    font-size: 1.7em;
+}
+
 
 .row::after {
     content: "";
@@ -38,7 +44,16 @@ p {
 .floatl {
   float: left;
 }
+.block{
+    margin: 0% 0% 23% 0%;
+}
+.first{
+    margin: 11% 0% 23% 0%;
+}
+.last{
+    margin: 0%;
 
+}
 /** animations stored here **/
 .animBlock {
   display: inline-block;
@@ -97,6 +112,7 @@ p {
     .col-12 {width: 100%;}
     .space{display:inline-block;}
     p{font-size: 1.2em;}
+    h1{font-size: 1.9em;}
 }
 @media only screen and (min-width: 1400px){
     p{font-size: 1.5em;}
