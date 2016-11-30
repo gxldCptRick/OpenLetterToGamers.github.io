@@ -10,7 +10,7 @@ $(function() {
       isScrolledIntoView($(this));
     });
   });
-     alert("milo is here");
+
 });
 /* http://stackoverflow.com/a/488073/477958 */
 function isScrolledIntoView(elem) {
@@ -34,8 +34,7 @@ function isScrolledIntoView(elem) {
     }
   }
 
-  if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-      alert("milo wasn't in here");
+  if(((elemBottom <= (docViewBottom + 100)) || (elemBottom <= docViewBottom)) && (elemTop >= docViewTop)) {
     // once an element is visible exchange the classes
     $(elem).removeClass('notViewed').addClass('viewed');
 
@@ -46,4 +45,4 @@ function isScrolledIntoView(elem) {
     }
   }
 }
-alert("my nigga harmabe");
+
