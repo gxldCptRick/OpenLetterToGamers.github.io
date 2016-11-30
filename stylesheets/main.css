@@ -1,151 +1,106 @@
-@font-face{
+* {
+    box-sizing: border-box;
+}
 
-    font-family: "yatra one";
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
 
-    src: url(../outsideFonts/yatra-one-master/Yatra-Regular.ttf);
-
+.space{
+    display: none;
 }
 
 body {
-
-    background: #111 url(../images/paperTexture.jpg);
-
-    font-family: "yatra one",calibri,fantasy;
-
+    background: #fff;
     font-size: 1em;
-
-}
-
-h1 {
-
-    text-align: center;
-
-    font-size: 2.8125em;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
-
-    text-indent: 3.25em;
-
-    font-size: 1.5625em;
-
+    font-size: 1em;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
 }
 
-
-.sign-off {
-    text-indent: 5.25em;
-}
-
-.grid {
-
-    width: 100%;
-
-}
-
-.grid:after {
-
+.row::after {
     content: "";
-
-    display: table;
-
     clear: both;
-
-}
-
-[class*='col-']{
-
-    float: left;
-
-    padding-right: 10%;
-
-    display: inline;
-
-}
-
-[class*='col-']:last-of-type {
-
-    padding-right: 0;
-
-}
-
-*, *:after, *:before {
-
-  -webkit-box-sizing: border-box;
-
-  -moz-box-sizing: border-box;
-
-    box-sizing: border-box;
-
-}
-
-.grid-pad {
-
-    padding: 20px 0 20px 20px;
-
-}
-
-.grid-pad > [class*='col-']:last-of-type {
-
-    padding-right: 20px;
-
-}
-
-.col-1-3 {
-
-    width: 33.3333333333333%;
-
-}
-
-.col-1-2 {
-
-    width: 50%;
-
-}
-
-.col-2-3 {
-
-    width: 66.6666666666667%;
-}
-
-.col-1-4{
-
-    width: 25%;
-
-}
-
-.col-3-4{
-
-    width: 45%;
-
-}
-
-[class*='col-block']{
-
-    background-color: #111;
-
     display: block;
-
-    height: 5px;
-
-    opacity: 0;
-
 }
 
-.col-block-1-4 {
-
-    width: 25%;
-
+.floatr {
+  float: right;
 }
 
-.col-block-1-3 {
-
-    width: 33.3333333333333333%;
-
+.floatl {
+  float: left;
 }
 
-.col-block-1-6 {
+/** animations stored here **/
+.animBlock {
+  display: inline-block;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: relative;
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+}
+.animBlock[data-position="left"] { left: -20%; }
+.animBlock[data-position="right"] { right: -20%; }
 
-    width: 16.6666666666666667%;
+.animBlock[data-position="left"].viewed {
+  left: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.animBlock[data-position="right"].viewed {
+  right: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 800px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .space{display:inline-block;}
+    p{font-size: 1.2em;}
+}
+@media only screen and (min-width: 1400px){
+    p{font-size: 1.5em;}
+}
+@media only screen and (min-width: 2400px){
+    p{font-size: 3em}
 }
